@@ -13,7 +13,7 @@ public class Teste_Colecoes {
     @Test
     public void Count_Test(){
         
-	    Map<String, Integer> M = new HashMap<String, Integer>();
+	Map<String, Integer> M = new HashMap<String, Integer>();
         M.put("cats", 1);
         M.put("like", 2);
         M.put("and", 1);
@@ -27,12 +27,12 @@ public class Teste_Colecoes {
     public void Convert_Test(){
 
         Convertor c = new Convertor();
-		String TSC = c.Convert();
+	String TSC = c.Convert();
 
-		TreeSet<String> TS = new TreeSet<>();
-		TS.add("Objetos");
-		TS.add("Orientada");
-		TS.add("Programacao");
+	TreeSet<String> TS = new TreeSet<>();
+	TS.add("Objetos");
+	TS.add("Orientada");
+	TS.add("Programacao");
 
         Assertions.assertEquals(TSC, TS.toString());
     }
